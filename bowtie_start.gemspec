@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'bowtie_starter/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "bowtie_starter"
+  spec.name          = "bowtie-start"
   spec.version       = BowtieStarter::VERSION
   spec.authors       = ["Ian Golden"]
   spec.email         = ["ian@iangolden.com"]
