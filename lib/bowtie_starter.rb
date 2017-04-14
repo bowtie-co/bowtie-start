@@ -10,7 +10,26 @@ class BowtieStarter
   def run
     program :name, 'bowtie_starter'
     program :version, '0.0.1'
-    program :description, 'A CLI for starting projects faster @bowtie.'
+    program :description, '
+
+  =====================
+|                       |
+|      \        /       |
+|     |  \    /  |      |
+|     ||\  \/  /||      |
+|     || \    / ||      |
+|     ||/  /\  \||      |
+|     |  /    \  |      |
+|      /        \|      |
+|                       |
+  =====================
+
+     Bowtie Starter
+      -----------
+
+     Ship, you fuck.
+
+    '
     default_command :help
 
     command :jekyll do |c|
