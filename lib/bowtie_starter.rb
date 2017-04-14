@@ -11,9 +11,10 @@ class BowtieStarter
     program :name, 'bowtie_starter'
     program :version, '0.0.1'
     program :description, 'A CLI for starting projects faster @bowtie.'
+    default_command :help
 
     command :jekyll do |c|
-      c.syntax = 'bowtie_starter jekyll [options]'
+      c.syntax = 'bts jekyll [options]'
       c.summary = ''
       c.description = ''
       c.example 'description', 'command example'
@@ -23,8 +24,8 @@ class BowtieStarter
       end
     end
 
-    command :jekyll-react do |c|
-      c.syntax = 'bowtie_starter jekyll-react [options]'
+    command :jekyll_react do |c|
+      c.syntax = 'bts jekyll-react [options]'
       c.summary = ''
       c.description = ''
       c.example 'description', 'command example'
@@ -35,7 +36,7 @@ class BowtieStarter
     end
 
     command :hexo do |c|
-      c.syntax = 'bowtie_starter hexo [options]'
+      c.syntax = 'bts hexo [options]'
       c.summary = ''
       c.description = ''
       c.example 'description', 'command example'
@@ -46,7 +47,7 @@ class BowtieStarter
     end
 
     command :hugo do |c|
-      c.syntax = 'bowtie_starter hugo [options]'
+      c.syntax = 'bts hugo [options]'
       c.summary = ''
       c.description = ''
       c.example 'description', 'command example'
@@ -56,8 +57,8 @@ class BowtieStarter
       end
     end
 
-    command :react-spa do |c|
-      c.syntax = 'bowtie_starter react-spa [options]'
+    command :react_spa do |c|
+      c.syntax = 'bts react-spa [options]'
       c.summary = ''
       c.description = ''
       c.example 'description', 'command example'
@@ -67,8 +68,8 @@ class BowtieStarter
       end
     end
 
-    command :react-native do |c|
-      c.syntax = 'bowtie_starter react-native [options]'
+    command :react_native do |c|
+      c.syntax = 'bts react-native [options]'
       c.summary = ''
       c.description = ''
       c.example 'description', 'command example'
