@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'commander'
 
-class MyApplication
+class BowtieStarter
   include Commander::Methods
   # include whatever modules you need
 
@@ -82,4 +82,4 @@ class MyApplication
   end
 end
 
-MyApplication.new.run if $0 == __FILE__
+BowtieStarter.new.run if $0 == __FILE__

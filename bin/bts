@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "HELLLO WORLD"
+require 'bowtie_starter'
+
+BowtieStarter.new.run
