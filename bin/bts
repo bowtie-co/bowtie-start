@@ -2,4 +2,4 @@
 
 require 'bowtie_start'
 
-BowtieStart.new.run
+BowtieStart::Runner.new.run

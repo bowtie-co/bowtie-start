@@ -3,14 +3,15 @@
 require 'rubygems'
 require 'commander'
 
-class BowtieStart
-  include Commander::Methods
-  # include whatever modules you need
+module BowtieStart
+  class Runner
+    include Commander::Methods
+    # include whatever modules you need
 
-  def run
-    program :name, 'bowtie_starter'
-    program :version, '0.0.1'
-    program :description, '
+    def run
+      program :name, 'bowtie_starter'
+      program :version, '0.0.1'
+      program :description, '
 
   =====================
 |                       |
@@ -29,76 +30,77 @@ class BowtieStart
 
      Ship, you fuck.
 
-    '
-    default_command :help
+      '
+      default_command :help
 
-    command :jekyll do |c|
-      c.syntax = 'bts jekyll [options]'
-      c.summary = ''
-      c.description = ''
-      c.example 'description', 'command example'
-      c.option '--some-switch', 'Some switch that does something'
-      c.action do |args, options|
-        puts "Started Jekyll Project"
+      command :jekyll do |c|
+        c.syntax = 'bts jekyll [options]'
+        c.summary = ''
+        c.description = ''
+        c.example 'description', 'command example'
+        c.option '--some-switch', 'Some switch that does something'
+        c.action do |args, options|
+          puts "Started Jekyll Project"
+        end
       end
-    end
 
-    command :jekyll_react do |c|
-      c.syntax = 'bts jekyll-react [options]'
-      c.summary = ''
-      c.description = ''
-      c.example 'description', 'command example'
-      c.option '--some-switch', 'Some switch that does something'
-      c.action do |args, options|
-        puts "Started Jekyll-React Project"
+      command :jekyll_react do |c|
+        c.syntax = 'bts jekyll-react [options]'
+        c.summary = ''
+        c.description = ''
+        c.example 'description', 'command example'
+        c.option '--some-switch', 'Some switch that does something'
+        c.action do |args, options|
+          puts "Started Jekyll-React Project"
+        end
       end
-    end
 
-    command :hexo do |c|
-      c.syntax = 'bts hexo [options]'
-      c.summary = ''
-      c.description = ''
-      c.example 'description', 'command example'
-      c.option '--some-switch', 'Some switch that does something'
-      c.action do |args, options|
-        puts "Started Hexo Project"
+      command :hexo do |c|
+        c.syntax = 'bts hexo [options]'
+        c.summary = ''
+        c.description = ''
+        c.example 'description', 'command example'
+        c.option '--some-switch', 'Some switch that does something'
+        c.action do |args, options|
+          puts "Started Hexo Project"
+        end
       end
-    end
 
-    command :hugo do |c|
-      c.syntax = 'bts hugo [options]'
-      c.summary = ''
-      c.description = ''
-      c.example 'description', 'command example'
-      c.option '--some-switch', 'Some switch that does something'
-      c.action do |args, options|
-        puts "Started Hugo Project"
+      command :hugo do |c|
+        c.syntax = 'bts hugo [options]'
+        c.summary = ''
+        c.description = ''
+        c.example 'description', 'command example'
+        c.option '--some-switch', 'Some switch that does something'
+        c.action do |args, options|
+          puts "Started Hugo Project"
+        end
       end
-    end
 
-    command :react_spa do |c|
-      c.syntax = 'bts react-spa [options]'
-      c.summary = ''
-      c.description = ''
-      c.example 'description', 'command example'
-      c.option '--some-switch', 'Some switch that does something'
-      c.action do |args, options|
-        puts "Started React SPA Project"
+      command :react_spa do |c|
+        c.syntax = 'bts react-spa [options]'
+        c.summary = ''
+        c.description = ''
+        c.example 'description', 'command example'
+        c.option '--some-switch', 'Some switch that does something'
+        c.action do |args, options|
+          puts "Started React SPA Project"
+        end
       end
-    end
 
-    command :react_native do |c|
-      c.syntax = 'bts react-native [options]'
-      c.summary = ''
-      c.description = ''
-      c.example 'description', 'command example'
-      c.option '--some-switch', 'Some switch that does something'
-      c.action do |args, options|
-        puts "Started react_native"
+      command :react_native do |c|
+        c.syntax = 'bts react-native [options]'
+        c.summary = ''
+        c.description = ''
+        c.example 'description', 'command example'
+        c.option '--some-switch', 'Some switch that does something'
+        c.action do |args, options|
+          puts "Started react_native"
+        end
       end
-    end
 
-    run!
+      run!
+    end
   end
 end
 
