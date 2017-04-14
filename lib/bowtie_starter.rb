@@ -20,7 +20,7 @@ class BowtieStarter
       c.example 'description', 'command example'
       c.option '--some-switch', 'Some switch that does something'
       c.action do |args, options|
-        # Do something or c.when_called Bowtie_starter::Commands::Jekyll
+        puts "Started Jekyll Project"
       end
     end
 
@@ -31,7 +31,7 @@ class BowtieStarter
       c.example 'description', 'command example'
       c.option '--some-switch', 'Some switch that does something'
       c.action do |args, options|
-        # Do something or c.when_called Bowtie_starter::Commands::Jekyll-react
+        puts "Started Jekyll-React Project"
       end
     end
 
@@ -42,7 +42,7 @@ class BowtieStarter
       c.example 'description', 'command example'
       c.option '--some-switch', 'Some switch that does something'
       c.action do |args, options|
-        # Do something or c.when_called Bowtie_starter::Commands::Hexo
+        puts "Started Hexo Project"
       end
     end
 
@@ -53,7 +53,7 @@ class BowtieStarter
       c.example 'description', 'command example'
       c.option '--some-switch', 'Some switch that does something'
       c.action do |args, options|
-        # Do something or c.when_called Bowtie_starter::Commands::Hugo
+        puts "Started Hugo Project"
       end
     end
 
@@ -64,7 +64,7 @@ class BowtieStarter
       c.example 'description', 'command example'
       c.option '--some-switch', 'Some switch that does something'
       c.action do |args, options|
-        # Do something or c.when_called Bowtie_starter::Commands::React-spa
+        puts "Started React SPA Project"
       end
     end
 
@@ -75,7 +75,7 @@ class BowtieStarter
       c.example 'description', 'command example'
       c.option '--some-switch', 'Some switch that does something'
       c.action do |args, options|
-        # Do something or c.when_called Bowtie_starter::Commands::React-native
+        puts "Started react_native"
       end
     end
 
