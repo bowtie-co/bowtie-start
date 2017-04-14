@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'bowtie_starter'
+require 'bowtie_start'
 
 BowtieStart.new.run

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'bowtie_starter/version'
+require 'bowtie_start/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "bowtie-start"
-  spec.version       = BowtieStarter::VERSION
+  spec.version       = BowtieStart::VERSION
   spec.authors       = ["Ian Golden"]
   spec.email         = ["ian@iangolden.com"]
 
