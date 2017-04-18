@@ -38,7 +38,7 @@ module BowtieStart
         c.description = ''
         c.example 'description', 'bts install_dependencies'
         c.action do |args, options|
-          %x(brew update && brew install hugo && npm install -g hexo)
+          %x(brew update && brew install hugo && npm install -g hexo-cli)
         end
       end
       command :jekyll do |c|
@@ -68,9 +68,8 @@ module BowtieStart
         c.summary = ''
         c.description = ''
         c.example 'description', 'command example'
-        c.option '--some-switch', 'Some switch that does something'
         c.action do |args, options|
-          %x(hexo init #{ARGV[1]})
+          ARGV[1].nil? ? (puts "Please specify a project dir. ex: 'bts hexo hello_world_project'")  : (%x(hexo init #{ARGV[1]}))
         end
       end
 
@@ -81,7 +80,7 @@ module BowtieStart
         c.example 'description', 'command example'
         c.option '--some-switch', 'Some switch that does something'
         c.action do |args, options|
-          puts "Started Hugo Project"
+          ARGV[1].nil? ? (puts "Please specify a project dir. ex: 'bts hugo hello_world_project'")  : (%x(hugo new site #{ARGV[1]}))
         end
       end
 
@@ -92,7 +91,7 @@ module BowtieStart
         c.example 'description', 'command example'
         c.option '--some-switch', 'Some switch that does something'
         c.action do |args, options|
-          puts "Started React SPA Project"
+          %x(git clone git@github.com:davezuko/react-redux-starter-kit.git #{ARGV[1]})
         end
       end
 
@@ -103,7 +102,7 @@ module BowtieStart
         c.example 'description', 'command example'
         c.option '--some-switch', 'Some switch that does something'
         c.action do |args, options|
-          puts "Started react_native"
+          ARGV[1].nil? ? (puts "Please specify a project dir. ex: 'bts react_native hello_world_project'")  : (%x(react-native init #{ARGV[1]}))
         end
       end
 
