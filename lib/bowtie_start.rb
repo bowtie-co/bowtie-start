@@ -10,7 +10,6 @@ module BowtieStart
     # include whatever modules you need
     def initialize
       @path = File.dirname(File.expand_path(__FILE__))
-
     end
 
     def run
