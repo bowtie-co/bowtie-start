@@ -33,7 +33,7 @@ module BowtieStart
 
      Bowtie Starter
       -----------
-      ' + random_quote
+' + random_quote["quote"].to_s
       default_command :help
 
       command :install_dependencies do |c|
